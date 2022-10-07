@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Libro } from 'src/app/interfaces/comentarios';
 
 @Component({
   selector: 'app-editar-libro',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditarLibroComponent implements OnInit {
 
+  listaLibros: Libro []= [
+    {
+    nombre:'Programación',
+    isbn:'252525',
+    editorial:'Malasca',
+    autor:'Juan Perez'
+  
+  },
+
+  {
+    nombre:'Programación',
+    isbn:'252525',
+    editorial:'Malasca',
+    autor:'Juan Perez'
+  
+  }
+]
+registroLibro: any;
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

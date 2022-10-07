@@ -9,3 +9,11 @@ export interface Registro{
     editorial:string,
     autor:string
 }
+
+export interface Libro{
+ 
+    nombre:string;
+    isbn:string;
+    editorial:string;
+    autor:string
+}
