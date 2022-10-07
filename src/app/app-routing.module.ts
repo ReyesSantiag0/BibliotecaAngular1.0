@@ -14,9 +14,7 @@ const routes: Routes = [
   {path: 'consultarlibros',component:ConsultarLibrosComponent},
   {path: 'editarlibro',component:EditarLibroComponent},
   {path: 'registrarlibro',component:RegistrarLibroComponent},
-    
-   
-  
+     
 ];
 
 @NgModule({
