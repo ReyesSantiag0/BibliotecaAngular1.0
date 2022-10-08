@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   constructor(private fb: FormBuilder) {
     this.inicioSesion=this.fb.group({
-      usuario:['',Validators.required],
+      correo:['',Validators.required],
       contrasenia:['',Validators.required]
      
     })
@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
   poner(){
     //console.log(this.agregaComentarios);
     const sesion:Sesion={
-      usuario: this.inicioSesion.get('usuario')?.value,
+      correo: this.inicioSesion.get('correo')?.value,
       contrasenia: this.inicioSesion.get('contrasenia')?.value
       
     }
