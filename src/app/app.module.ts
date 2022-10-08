@@ -7,7 +7,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './componentes/login/login.component';
 import { HomeComponent } from './componentes/home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { RegistroPersonaComponent } from './componentes/registro-persona/registro-persona.component';
+
 
 import { ConsultarPrestamosComponent } from './componentes/consultar-prestamos/consultar-prestamos.component';
 import { ConsultarLibrosComponent } from './componentes/consultar-libros/consultar-libros.component';
@@ -22,7 +22,7 @@ import { ResgistroAdminComponent } from './componentes/resgistro-admin/resgistro
     AppComponent,
     LoginComponent,
     HomeComponent,
-    RegistroPersonaComponent,
+
     ConsultarPrestamosComponent,
     ConsultarLibrosComponent,
     RegistrarLibroComponent,
