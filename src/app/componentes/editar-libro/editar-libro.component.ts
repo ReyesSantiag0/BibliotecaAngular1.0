@@ -25,7 +25,7 @@ export class EditarLibroComponent implements OnInit {
   
   }
 ]
-registroLibro: any;
+
   constructor() { }
 
   ngOnInit(): void {

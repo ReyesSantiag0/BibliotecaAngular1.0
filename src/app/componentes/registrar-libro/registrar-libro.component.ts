@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Registro } from 'src/app/interfaces/comentarios';
 
+
 @Component({
   selector: 'app-registrar-libro',
   templateUrl: './registrar-libro.component.html',
