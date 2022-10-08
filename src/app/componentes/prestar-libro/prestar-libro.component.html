@@ -1,1 +1,103 @@
-<p>prestar-libro works!</p>
+<app-navbar></app-navbar>
+<br><br>
+
+<head>
+  <style>
+    body {
+      background-image: url(../img/font.png);
+      background-size: cover;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <div class="container px-4">
+    <div class="card">
+      <h5 class="card-header">FORMULARIO DE PRESTAMO</h5>
+      <div class="card-body">
+
+        <div class="row mb-3 needs-validation" novalidate>
+          <div class="col mx-5 px-5">
+            <label for="validationnombre" class="form-label">Nombre del usuario</label>
+            <div class="col-sm-auto">
+              <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">
+            </div>
+          </div>
+          <div class="col mx-5 px-5">
+            <label for="apellido" class="form-label">Apellido del usuario</label>
+            <div class="col-sm-auto">
+              <input type="number" class="form-control" id="apellido" name="apellido" aria-describedby="validationape">
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col mx-5 px-5">
+            <label for="tipoide" class="form-label">Tipo de documento del usuario:</label>
+            <select class="form-select" aria-label="Default select example" id="tipoide" name="tipoide">
+              <option selected>seleccióne</option>
+              <option value="CC">CC</option>
+              <option value="TI">TI</option>
+            </select>
+          </div>
+
+          <div class="col mx-5 px-5">
+            <label for="numdoc" class="form-label">Número de documento del usuario</label>
+            <input type="numer" class="form-control" placeholder="Número de identificación" aria-label="inputtipoIDA"
+              id="numdoc" name="numdoc">
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col mx-5 px-5">
+            <label for="validationnombre" class="form-label">Email</label>
+            <div class="col-sm-auto">
+              <input type="email" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">
+            </div>
+          </div>
+          <div class="col mx-5 px-5">
+            <label for="celular" class="form-label">Celular</label>
+            <div class="col-sm-auto">
+              <input type="tel" class="form-control" id="celular" name="celular">
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+
+          <div class="col mx-5 px-5">
+            <label for="validationnombre" class="form-label">Fecha de prestamo</label>
+            <div class="col-sm-auto">
+              <input type="date" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">
+            </div>
+          </div>
+
+          <div class="col mx-5 px-5">
+            <label for="validationnombre" class="form-label">Fecha de devolución</label>
+            <div class="col-sm-auto">
+              <input type="date" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="container fluid">
+          <br>
+          <div class="mx-auto" style="width:190px;">
+            <input class="btn btn-success btn-sm me-md-4" type="submit" value="Registrarme">
+            <button type="button" class="btn btn-warning btn-sm" routerLink="/editarlibro">Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>

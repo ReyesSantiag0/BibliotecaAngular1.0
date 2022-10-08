@@ -1,36 +1,33 @@
 <app-navbar></app-navbar>
 
 <div class="card">
-    <img src="./assets/2.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-        <div class="container">
+  <img src="./assets/2.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <div class="container">
 
-            <form [formGroup]="registroLibro" (ngSubmit)="poner()">
-                <div class="mb-3">
-                    <label for="Nombre" class="form-label">Nombre</label>
-                    <input formControlName="nombre_libro" type="text" class="form-control" id="nombre_libro">
-                </div>
+      <div class="mb-3">
+        <label for="Nombre" class="form-label">Nombre</label>
+        <input formControlName="nombre_libro" type="text" class="form-control" id="nombre_libro">
+      </div>
 
-                <div class="mb-3">
-                    <label for="isbn" class="form-label">ISBN</label>
-                    <input formControlName="isbn" type="text" class="form-control" id="isbn">
-                </div>
+      <div class="mb-3">
+        <label for="isbn" class="form-label">ISBN</label>
+        <input formControlName="isbn" type="text" class="form-control" id="isbn">
+      </div>
 
-                <div class="mb-3">
-                    <label for="editorial" class="form-label">Editorial</label>
-                    <input formControlName="editorial" type="text" class="form-control" id="editorial">
-                </div>
+      <div class="mb-3">
+        <label for="editorial" class="form-label">Editorial</label>
+        <input formControlName="editorial" type="text" class="form-control" id="editorial">
+      </div>
 
-                <div class="mb-3">
-                    <label for="autor" class="form-label">Autor</label>
-                    <input formControlName="autor_libro" type="text" class="form-control" id="autor_libro">
-                </div>
+      <div class="mb-3">
+        <label for="autor" class="form-label">Autor</label>
+        <input formControlName="autor_libro" type="text" class="form-control" id="autor_libro">
+      </div>
 
-                <!--<button type="submit" class="btn btn-primary float-end">Aceptar</button>-->
-                <button type="button" routerLink="" routerLinkActive="router-link-active" class="btn btn-warning float-end">Siguiente</button>
-                <button type="submit" class="btn btn-primary float-end">Aceptar</button>
-                <!--<button routerLink="home" type="button" class="btn btn-primary">Regresar</button>-->
-            </form>
-        </div>
+      <button type="button" routerLink="" routerLinkActive="router-link-active"
+        class="btn btn-warning float-end">Siguiente</button>
+      <button type="submit" class="btn btn-primary float-end">Aceptar</button>
     </div>
+  </div>
 </div>

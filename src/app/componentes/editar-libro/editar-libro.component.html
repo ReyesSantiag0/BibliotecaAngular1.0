@@ -1,36 +1,40 @@
 <app-navbar></app-navbar>
 <br><br>
 <div class="card text-bg-light mb-3" style="max-width: 120rem;">
-    <div class="card-header">EDITAR LIBROS</div>
-    <br>
-    <div class="card-body">
+  <div class="card-header">EDITAR LIBROS</div>
+  <div class="card-body">
 
-        <table *ngIf="listaLibros.length>0" class="table table-hover mt-3">
-            <thead>
-                <tr>
-                    <td>Nombre</td>
-                    <td>ISBN</td>
-                    <td>Editorial</td>
-                    <td>Autor</td>
-                </tr>
-            </thead>
+    <table *ngIf="listaLibros.length>0" class="table table-hover mt-3">
+      <thead>
+        <tr>
+          <td>Nombre</td>
+          <td>ISBN</td>
+          <td>Editorial</td>
+          <td>Autor</td>
+          <td colspan="3">Opciones</td>
+
+        </tr>
+      </thead>
 
 
-            <tbody>
-                <tr *ngFor="let coment of listaLibros">
+      <tbody>
+        <tr *ngFor="let coment of listaLibros">
 
-                    <td><a [routerLink]="['/ver', 1]">{{coment.nombre}}</a></td>
-                    <td>{{coment.isbn}}</td>
-                    <td>{{coment.editorial}}</td>
-                    <td>{{coment.autor}}</td>
-                    <td style="width: 5%"><button class="btn btn-primary btn-sm float-end">Editar </button></td>
-                    <td style="width: 5%"><button class="btn btn-danger btn-sm float-edd">Eliminar </button></td>
-                </tr>
-            </tbody>
-        </table>
+          <td><a [routerLink]="['/ver', 1]">{{coment.nombre}}</a></td>
+          <td>{{coment.isbn}}</td>
+          <td>{{coment.editorial}}</td>
+          <td>{{coment.autor}}</td>
+          <td style="width: 5%"><button class="btn btn-primary btn-sm float-end">Editar </button></td>
+          <td style="width: 5%"><button class="btn btn-success btn-sm float-end" routerLink="/prestarlibro">Prestar
+            </button></td>
+          <td style="width: 5%"><button class="btn btn-danger btn-sm float-edd">Eliminar
+            </button></td>
+        </tr>
+      </tbody>
+    </table>
 
-        <div *ngif="listaLibros.length==0" class="row mt5">
-            <h5> No hay ningun libro registrado</h5>
-        </div>
+    <div *ngif="listaLibros.length==0" class="row mt5">
+      <h5> No hay ningun libro registrado</h5>
     </div>
+  </div>
 </div>

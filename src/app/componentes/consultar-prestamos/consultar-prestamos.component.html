@@ -1,1 +1,58 @@
-<p>consultar-prestamos works!</p>
+<app-navbar></app-navbar>
+<br><br>
+
+
+<div class="card">
+  <h3 class="card-header text-center">Lista de Prestamos</h3>
+  <div class="card-body">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Nombre del libro" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+
+    <br><br>
+    <div class="row mx-5">
+
+      <table class="table table-bordered">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Nombre del usuario</th>
+          <th scope="col">Cedula del usuario</th>
+          <th scope="col">Nombre del Libro</th>
+          <th scope="col">ISBN</th>
+          <th scope="col">Fecha de devolución</th>
+
+        </tr>
+
+        <tbody class="table-group-divider">
+
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+
+      </table>
+
+    </div>
+
+
+
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+          <a class="page-link">Anterior</a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="/consultarlibros">Siguiente</a>
+        </li>
+      </ul>
+    </nav>
+
+  </div>
+</div>

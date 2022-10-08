@@ -15,6 +15,7 @@ import { RegistrarLibroComponent } from './componentes/registrar-libro/registrar
 import { EditarLibroComponent } from './componentes/editar-libro/editar-libro.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
 import { PrestarLibroComponent } from './componentes/prestar-libro/prestar-libro.component';
+import { ResgistroAdminComponent } from './componentes/resgistro-admin/resgistro-admin.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { PrestarLibroComponent } from './componentes/prestar-libro/prestar-libro
     RegistrarLibroComponent,
     EditarLibroComponent,
     NavbarComponent,
-    PrestarLibroComponent
+    PrestarLibroComponent,
+    ResgistroAdminComponent
   ],
   imports: [
     BrowserModule,
