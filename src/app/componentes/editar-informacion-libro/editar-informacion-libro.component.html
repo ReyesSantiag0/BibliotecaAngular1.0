@@ -1,0 +1,70 @@
+<app-navbar></app-navbar>
+<br><br>
+
+<head>
+  <style>
+    body {
+      background-image: url(../img/font.png);
+      background-size: cover;
+    }
+  </style>
+
+</head>
+
+
+<body>
+
+
+  <div class="orientacionTarjeta">
+    <div class="card">
+      <h5 class="card-header text-center">EDITAR INFORMACIÓN DEL LIBRO</h5>
+      <div class="card-body">
+
+        <div class="row mb-3 needs-validation" novalidate>
+          <div class="col mx-5 px-5">
+            <label for="validationnombre" class="form-label">Nombre del libro</label>
+            <div class="col-sm-auto">
+              <input type="text" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">
+            </div>
+          </div>
+          <div class="col mx-5 px-5">
+            <label for="apellido" class="form-label">Autor del libro</label>
+            <div class="col-sm-auto">
+              <input type="number" class="form-control" id="apellido" name="apellido" aria-describedby="validationape">
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mb-3 needs-validation" novalidate>
+          <div class="col mx-5 px-5">
+            <label for="validationnombre" class="form-label">ISBN del libro</label>
+            <div class="col-sm-auto">
+              <input type="number" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">
+            </div>
+          </div>
+          <div class="col mx-5 px-5">
+            <label for="apellido" class="form-label">Editorial del libro</label>
+            <div class="col-sm-auto">
+              <input type="text" class="form-control" id="apellido" name="apellido" aria-describedby="validationape">
+            </div>
+          </div>
+        </div>
+
+        <div class="container fluid">
+          <div class="mx-auto" style="width:190px;">
+            <input class="btn btn-success btn-sm me-md-4" type="submit" value="Actualizar">
+            <button type="button" class="btn btn-warning btn-sm" routerLink="/editarlibro">Volver</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+
+  <div class="footer">
+    <p>2022 © Biblioteca UDENAR | Ipiales, Nariño - Colombia</p>
+  </div>
+
+</body>

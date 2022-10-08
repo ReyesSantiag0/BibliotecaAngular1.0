@@ -9,6 +9,7 @@ import { RegistrarLibroComponent } from "./componentes/registrar-libro/registrar
 import { ResgistroAdminComponent } from "./componentes/resgistro-admin/resgistro-admin.component";
 import { PrestarLibroComponent } from "./componentes/prestar-libro/prestar-libro.component";
 import { ConsultarPrestamosComponent } from "./componentes/consultar-prestamos/consultar-prestamos.component";
+import { EditarInformacionLibroComponent } from "./componentes/editar-informacion-libro/editar-informacion-libro.component";
 
 const routes: Routes = [
   { path: "", component: LoginComponent },
@@ -19,6 +20,10 @@ const routes: Routes = [
   { path: "registroAdmin", component: ResgistroAdminComponent },
   { path: "prestarlibro", component: PrestarLibroComponent },
   { path: "consultaprestamo", component: ConsultarPrestamosComponent },
+  {
+    path: "editarinformacionlibro",
+    component: EditarInformacionLibroComponent,
+  },
 ];
 
 @NgModule({

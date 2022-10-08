@@ -1,0 +1,14 @@
+.footer {
+  background-color: #171616;
+  color: white;
+  text-align: center;
+  padding: 7px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.orientacionTarjeta {
+  width: 60%;
+  margin: auto;
+}
