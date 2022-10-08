@@ -10,7 +10,7 @@ export class EditarLibroComponent implements OnInit {
 
   listaLibros: Libro []= [
     {
-    nombre:'Programación',
+    nombre:'Programacion',
     isbn:'252525',
     editorial:'Malasca',
     autor:'Juan Perez'
@@ -18,12 +18,12 @@ export class EditarLibroComponent implements OnInit {
   },
 
   {
-    nombre:'Programación',
+    nombre:'Programacion',
     isbn:'252525',
     editorial:'Malasca',
     autor:'Juan Perez'
   
-  }
+  },
 ]
 
   constructor() { }
