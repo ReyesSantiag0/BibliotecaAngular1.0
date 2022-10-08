@@ -1,10 +1,10 @@
 <head>
-    <style>
-        body {
-            background-image: url(../img/font.png);
-            background-size: cover;
-        }
-    </style>
+  <style>
+    body {
+      background-image: url(../img/font.png);
+      background-size: cover;
+    }
+  </style>
 
 </head>
 
@@ -12,81 +12,86 @@
 <body>
 
 
-    <div class="container px-4">
-        <div class="card">
-            <h5 class="card-header">REGISTRO DE ADMINISTRADORES</h5>
-            <div class="card-body">
-                <form [formGroup]="registroAdmin" (ngSubmit)="poner()">
-                    <div class="row mb-3 needs-validation" novalidate>
-                        <div class="col mx-5 px-5">
-                            <label for="validationnombre" class="col-form-label">Nombre</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="nombre" type="text" class="form-control" id="nombre">
-                            </div>
-                        </div>
-                        <div class="col mx-5 px-5">
-                            <label for="apellido" class="col-form-label">Apellido</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="apellido" type="text" class="form-control" id="apellido">
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col mx-5 px-5">
-                            <label for="celular" class="form-label">Celular</label>
-                            <div class="col-sm-auto">
-
-                                <input formControlName="celular" type="text" class="form-control" id="celular">
-                                <br>
-                            </div>
-                        </div>
-
-                        <div class="col mx-5 px-5">
-                            <label for="numdoc" class="form-label">Número de documento</label>
-                            <input formControlName="ndocumento" type="text" class="form-control" id="ndocumento">
-                        </div>
-                    </div>
-
-
-                    <div class="row mb-3 needs-validation" novalidate>
-                        <div class="col mx-5 px-5">
-                            <label for="validationnombre" class="col-form-label">Email</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="correo" type="email" class="form-control" id="correo">
-                            </div>
-                        </div>
-                        <div class="col mx-5 px-5">
-                            <label for="apellido" class="col-form-label">Contraseña</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="contrasenia" type="password" class="form-control" id="contrasenia">
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="container fluid">
-                        <br>
-                        <div class="mx-auto" style="width:300px;">
-                            <p style="color:black;padding-left:20px;"> <input style="opacity:1;" type="checkbox" data-required="1" name="terminos"> Aceptar los <a style="color:blue;" href="#">Términos y
-              Condiciones</a>
-
-                            </p>
-                        </div>
-
-
-                        <div class="mx-auto" style="width:190px;">
-                            <input class="btn btn-success btn-sm me-md-4" type="submit" value="Registrarme">
-                            <button type="button" class="btn btn-warning btn-sm" routerLink="/">Volver</button>
-                        </div>
-                    </div>
-                </form>
+  <div class="orientacionTarjeta">
+    <div class="card">
+      <h5 class="card-header">REGISTRO DE ADMINISTRADORES</h5>
+      <div class="card-body">
+        <form [formGroup]="registroAdmin" (ngSubmit)="poner()">
+          <div class="row mb-3 needs-validation" novalidate>
+            <div class="col mx-5 px-5">
+              <label for="validationnombre" class="col-form-label">Nombre</label>
+              <div class="col-sm-auto">
+                <input formControlName="nombre" type="text" class="form-control" id="nombre">
+              </div>
             </div>
-        </div>
-    </div>
+            <div class="col mx-5 px-5">
+              <label for="apellido" class="col-form-label">Apellido</label>
+              <div class="col-sm-auto">
+                <input formControlName="apellido" type="text" class="form-control" id="apellido">
+                <br>
+              </div>
+            </div>
+          </div>
 
+          <div class="row">
+            <div class="col mx-5 px-5">
+              <label for="celular" class="form-label">Celular</label>
+              <div class="col-sm-auto">
+
+                <input formControlName="celular" type="text" class="form-control" id="celular">
+                <br>
+              </div>
+            </div>
+
+            <div class="col mx-5 px-5">
+              <label for="numdoc" class="form-label">Número de documento</label>
+              <input formControlName="ndocumento" type="text" class="form-control" id="ndocumento">
+            </div>
+          </div>
+
+
+          <div class="row mb-3 needs-validation" novalidate>
+            <div class="col mx-5 px-5">
+              <label for="validationnombre" class="col-form-label">Email</label>
+              <div class="col-sm-auto">
+                <input formControlName="correo" type="email" class="form-control" id="correo">
+              </div>
+            </div>
+            <div class="col mx-5 px-5">
+              <label for="apellido" class="col-form-label">Contraseña</label>
+              <div class="col-sm-auto">
+                <input formControlName="contrasenia" type="password" class="form-control" id="contrasenia">
+                <br>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="container fluid">
+            <br>
+            <div class="mx-auto" style="width:300px;">
+              <p style="color:black;padding-left:20px;"> <input style="opacity:1;" type="checkbox" data-required="1"
+                  name="terminos"> Aceptar los <a style="color:blue;" href="#">Términos y
+                  Condiciones</a>
+
+              </p>
+            </div>
+
+
+            <div class="mx-auto" style="width:190px;">
+              <input class="btn btn-success btn-sm me-md-4" type="submit" value="Registrarme">
+              <button type="button" class="btn btn-warning btn-sm" routerLink="/">Volver</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer-->
+  <div class="footer">
+    <p>2022 © Biblioteca UDENAR | Ipiales, Nariño - Colombia</p>
+  </div>
 </body>

@@ -1,69 +1,70 @@
 <head>
 
-    <style>
-        body {
-            background-image: url(../img/font.png);
-            background-size: cover;
-        }
-        
-        .bg {
-            background-image: url(../img/117.jpeg);
-            background-position: center;
-            background-size: cover;
-        }
-    </style>
+  <style>
+    body {
+      background-image: url();
+      background-size: cover;
+    }
+
+    .bg {
+      background-image: url(../../../assets/logon.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+  </style>
 
 </head>
 
 <!--MEDIDAD DEL FORMULARIO-->
 
 <body>
+
+  <div class="py-5">
     <div class="container w-50 bg-primary mt-5 rounded shadow">
-        <div class="row align-items-lg-stretch">
-            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+      <div class="row align-items-lg-stretch">
+        <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+        </div>
+        <!--MEDIDAD DEL FORMULARIO-->
+        <div class="col bg-white p-3 rounded-end ">
+          <div class="text-end">
+          </div>
+
+          <h2 class="ww-bold text-center py-1">Bienvenido</h2>
+
+          <!--LOGIN-->
+          <form [formGroup]="inicioSesion" (ngSubmit)="poner()">
+            <div class="mb-4">
+              <label for="email" class="form-label">Correo electrónico</label>
+              <input formControlName="correo" type="email" class="form-control" id="correo">
+            </div>
+            <div class="mb-4">
+              <label for="password" class="form-label">Contraseña</label>
+              <input formControlName="contrasenia" type="password" class="form-control" id="contrasenia">
+            </div>
+            <div class="mb-4 form-check">
+              <input type="checkbox" name="connected" class="form-check-input" onclick="">
+              <label for="conneted" class="form-check-label">Mostrar Contraseña</label>
+            </div>
+
+            <button type="submit" class="btn btn-primary float-end">Aceptar</button>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-success" routerLink="/home"
+                routerLinkActive="router-link-active">Iniciar
+                Sesión</button>
+
+              <button type="button" class="btn btn-link" routerLink="/registroAdmin">¿No tienes una cuenta?</button>
 
             </div>
-            <!--MEDIDAD DEL FORMULARIO-->
-            <div class="col bg-white p-3 rounded-end ">
-                <div class="text-end">
-                    <img src="img/Logotipo01.png" width="100" alt="">
-                </div>
 
-                <h2 class="ww-bold text-center py-1">Bienvenido</h2>
-
-                <!--LOGIN-->
-                <form [formGroup]="inicioSesion" (ngSubmit)="poner()">
-                    <div class="mb-4">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input formControlName="correo" type="email" class="form-control" id="correo">
-                    </div>
-                    <div class="mb-4">
-                        <label for="password" class="form-label">Contraseña</label>
-                        <input formControlName="contrasenia" type="password" class="form-control" id="contrasenia">
-                    </div>
-                    <div class="mb-4 form-check">
-                        <input type="checkbox" name="connected" class="form-check-input" onclick="">
-                        <label for="conneted" class="form-check-label">Mostrar Contraseña</label>
-                    </div>
-
-                    <button type="submit" class="btn btn-primary float-end">Aceptar</button>
-
-                    <div class="d-grid">
-                        <button type="submit" class="btn btn-success" routerLink="/home" routerLinkActive="router-link-active">Iniciar
-                                  Sesión</button>
-
-                        <button type="button" class="btn btn-link" routerLink="/registroAdmin">¿No tienes una cuenta?</button>
-
-                    </div>
-
-                </form>
-            </div>
+          </form>
         </div>
+      </div>
     </div>
+  </div>
+  <div class="footer">
+    <p>2022 © Biblioteca UDENAR | Ipiales, Nariño - Colombia</p>
+  </div>
 
-    <div class="footer">
-        <div class="container-fluid bg-dark text-center p-2 text-light">
-            <p>2022 © Biblioteca UDENAR | Ipiales, Nariño - Colombia</p>
-        </div>
-    </div>
 </body>

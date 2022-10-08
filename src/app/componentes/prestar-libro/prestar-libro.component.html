@@ -2,12 +2,12 @@
 <br><br>
 
 <head>
-    <style>
-        body {
-            background-image: url(../img/font.png);
-            background-size: cover;
-        }
-    </style>
+  <style>
+    body {
+      background-image: url(../img/font.png);
+      background-size: cover;
+    }
+  </style>
 
 </head>
 
@@ -15,92 +15,99 @@
 <body>
 
 
-    <div class="container px-4">
-        <div class="card">
-            <h5 class="card-header">FORMULARIO DE PRESTAMO</h5>
-            <div class="card-body">
-                <form [formGroup]="registroPrestamo" (ngSubmit)="poner()">
-                    <div class="row mb-3 needs-validation" novalidate>
-                        <div class="col mx-5 px-5">
-                            <label for="validationnombre" class="form-label">Nombre del usuario</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="nombre" type="text" class="form-control" id="nombre">
-                            </div>
-                        </div>
-                        <div class="col mx-5 px-5">
-                            <label for="apellido" class="form-label">Apellido del usuario</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="apellido" type="text" class="form-control" id="apellido">
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col mx-5 px-5">
-                            <label for="tipoide" class="form-label">Tipo de documento del usuario:</label>
-                            <select formControlName="tipodoc" type="text" class="form-select" id="tipodoc" aria-label="Default select example">
-                            <!--<select class="form-select" aria-label="Default select example" id="tipoide" name="tipoide">-->
-              <option selected>seleccióne</option>
-              <option value="CC">CC</option>
-              <option value="TI">TI</option>
-            </select>
-                        </div>
-
-                        <div class="col mx-5 px-5">
-                            <label for="numdoc" class="form-label">Número de documento del usuario</label>
-                            <input formControlName="ndocumento" type="text" class="form-control" id="ndocumento">
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col mx-5 px-5">
-                            <label for="validationnombre" class="form-label">Email</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="correo" type="email" class="form-control" id="correo">
-                            </div>
-                        </div>
-                        <div class="col mx-5 px-5">
-                            <label for="celular" class="form-label">Celular</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="celular" type="text" class="form-control" id="celular">
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col mx-5 px-5">
-                            <label for="validationnombre" class="form-label">Fecha de prestamo</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="fprestamo" type="date" class="form-control" id="fprestamo" aria-describedby="validationnombre">
-                                <!--<input type="date" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">-->
-                            </div>
-                        </div>
-
-                        <div class="col mx-5 px-5">
-                            <label for="validationnombre" class="form-label">Fecha de devolución</label>
-                            <div class="col-sm-auto">
-                                <input formControlName="fdevolucion" type="date" class="form-control" id="fdevolucion">
-                                <!--<input type="date" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">-->
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <div class="container fluid">
-                        <br>
-                        <div class="mx-auto" style="width:190px;">
-                            <input class="btn btn-success btn-sm me-md-4" type="submit" value="Registrarme">
-                            <button type="button" class="btn btn-warning btn-sm" routerLink="/editarlibro">Volver</button>
-                        </div>
-                    </div>
-                </form>
+  <div class="orientacionTarjeta">
+    <div class="card">
+      <h5 class="card-header">FORMULARIO DE PRESTAMO</h5>
+      <div class="card-body">
+        <form [formGroup]="registroPrestamo" (ngSubmit)="poner()">
+          <div class="row mb-3 needs-validation" novalidate>
+            <div class="col mx-5 px-5">
+              <label for="validationnombre" class="form-label">Nombre del usuario</label>
+              <div class="col-sm-auto">
+                <input formControlName="nombre" type="text" class="form-control" id="nombre">
+              </div>
             </div>
-        </div>
+            <div class="col mx-5 px-5">
+              <label for="apellido" class="form-label">Apellido del usuario</label>
+              <div class="col-sm-auto">
+                <input formControlName="apellido" type="text" class="form-control" id="apellido">
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col mx-5 px-5">
+              <label for="tipoide" class="form-label">Tipo de documento del usuario:</label>
+              <select formControlName="tipodoc" type="text" class="form-select" id="tipodoc"
+                aria-label="Default select example">
+                <!--<select class="form-select" aria-label="Default select example" id="tipoide" name="tipoide">-->
+                <option selected>seleccióne</option>
+                <option value="CC">CC</option>
+                <option value="TI">TI</option>
+              </select>
+            </div>
+
+            <div class="col mx-5 px-5">
+              <label for="numdoc" class="form-label">Número de documento del usuario</label>
+              <input formControlName="ndocumento" type="text" class="form-control" id="ndocumento">
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col mx-5 px-5">
+              <label for="validationnombre" class="form-label">Email</label>
+              <div class="col-sm-auto">
+                <input formControlName="correo" type="email" class="form-control" id="correo">
+              </div>
+            </div>
+            <div class="col mx-5 px-5">
+              <label for="celular" class="form-label">Celular</label>
+              <div class="col-sm-auto">
+                <input formControlName="celular" type="text" class="form-control" id="celular">
+                <br>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+
+            <div class="col mx-5 px-5">
+              <label for="validationnombre" class="form-label">Fecha de prestamo</label>
+              <div class="col-sm-auto">
+                <input formControlName="fprestamo" type="date" class="form-control" id="fprestamo"
+                  aria-describedby="validationnombre">
+                <!--<input type="date" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">-->
+              </div>
+            </div>
+
+            <div class="col mx-5 px-5">
+              <label for="validationnombre" class="form-label">Fecha de devolución</label>
+              <div class="col-sm-auto">
+                <input formControlName="fdevolucion" type="date" class="form-control" id="fdevolucion">
+                <!--<input type="date" class="form-control" id="nombre" name="nombre" aria-describedby="validationnombre">-->
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="container fluid">
+            <br>
+            <div class="mx-auto" style="width:190px;">
+              <input class="btn btn-success btn-sm me-md-4" type="submit" value="Registrarme">
+              <button type="button" class="btn btn-warning btn-sm" routerLink="/editarlibro">Volver</button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
+
+
+  <div class="footer">
+    <p>2022 © Biblioteca UDENAR | Ipiales, Nariño - Colombia</p>
+  </div>
 
 </body>
