@@ -18,7 +18,9 @@ export class PrestarLibroComponent implements OnInit {
       tipodoc:['',Validators.required],
       ndocumento:['',Validators.required],
       correo:['',Validators.required],
-      celular:['',Validators.required]
+      celular:['',Validators.required],
+      fprestamo:['',Validators.required],
+      fdevolucion:['',Validators.required]
      
     })
    }

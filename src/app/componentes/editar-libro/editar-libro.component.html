@@ -1,52 +1,67 @@
 <app-navbar></app-navbar>
 <br><br>
 
-
 <div class="orientacionTarjeta">
-  <div class="card text-bg-light mb-3" style="max-width: 120rem;">
-    <div class="card-header">EDITAR LIBROS</div>
-    <div class="card-body">
+    <div class="card">
+        <h3 class="card-header text-center">Administración de libros</h3>
+        <div class="card-body">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Nombre del libro" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
 
-      <table *ngIf="listaLibros.length>0" class="table table-hover mt-3">
-        <thead>
-          <tr>
-            <td>Nombre</td>
-            <td>ISBN</td>
-            <td>Editorial</td>
-            <td>Autor</td>
-            <td colspan="3">Opciones</td>
+            <table *ngIf="listaLibros.length>0" class="table table-hover mt-3">
+                <thead>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>ISBN</td>
+                        <td>Editorial</td>
+                        <td>Autor</td>
+                        <td colspan="3">Opciones</td>
 
-          </tr>
-        </thead>
+                    </tr>
+                </thead>
 
 
-        <tbody>
-          <tr *ngFor="let coment of listaLibros">
+                <tbody>
+                    <tr *ngFor="let coment of listaLibros">
 
-            <td><a>{{coment.nombre}}</a></td>
-            <td>{{coment.isbn}}</td>
-            <td>{{coment.editorial}}</td>
-            <td>{{coment.autor}}</td>
-            <td style="width: 5%"><button class="btn btn-primary btn-sm float-end"
-                routerLink="/editarinformacionlibro">Editar
+                        <td><a>{{coment.nombre}}</a></td>
+                        <td>{{coment.isbn}}</td>
+                        <td>{{coment.editorial}}</td>
+                        <td>{{coment.autor}}</td>
+                        <td style="width: 5%"><button class="btn btn-primary btn-sm float-end" routerLink="/editarinformacionlibro">Editar
               </button></td>
-            <td style="width: 5%"><button class="btn btn-success btn-sm float-end" routerLink="/prestarlibro">Prestar
+                        <td style="width: 5%"><button class="btn btn-success btn-sm float-end" routerLink="/prestarlibro">Prestar
               </button></td>
-            <td style="width: 5%"><button class="btn btn-danger btn-sm float-edd">Eliminar
+                        <td style="width: 5%"><button class="btn btn-danger btn-sm float-edd">Eliminar
               </button></td>
-          </tr>
-        </tbody>
-      </table>
+                    </tr>
+                </tbody>
+            </table>
 
-      <!-- <div *ngif="listaLibros.length==0" class="row mt5">
+            <!-- <div *ngif="listaLibros.length==0" class="row mt5">
       <h5> No hay ningun libro registrado</h5>
     </div> -->
-    </div>
-  </div>
-</div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link">Anterior</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="/editarlibro">1</a></li>
+                    <li class="page-item"><a class="page-link" href="/editarlibro">2</a></li>
+                    <li class="page-item"><a class="page-link" href="/editarlibro">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="/editarlibro">Siguiente</a>
+                    </li>
+                </ul>
+            </nav>
 
+        </div>
+    </div>
+</div>
 
 <!-- Footer-->
 <div class="footer">
-  <p>2022 © Biblioteca UDENAR | Ipiales, Nariño - Colombia</p>
+    <p>2022 © Biblioteca UDENAR | Ipiales, Nariño - Colombia</p>
 </div>

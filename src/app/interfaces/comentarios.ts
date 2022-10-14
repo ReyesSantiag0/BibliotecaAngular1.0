@@ -4,6 +4,7 @@ export interface Sesion{
 }
 
 export interface Registro{
+    id?: string;
     nombre: string,
     isbn:string,
     editorial:string,
@@ -11,7 +12,7 @@ export interface Registro{
 }
 
 export interface Libro{
- 
+    id?: string;
     nombre:string;
     isbn:string;
     editorial:string;
@@ -19,7 +20,7 @@ export interface Libro{
 }
 
 export interface Administrador{
- 
+    id?: string;
     nombre:string;
     apellido:string;
     celular:string;
@@ -29,13 +30,13 @@ export interface Administrador{
 }
 
 export interface Prestamo{
- 
+    id?: string;
     nombre:string;
     apellido:string;
     tipodoc:string;
     ndocumento:string;
     correo:string;
     celular:string;
-    fprestamo:Date;
-    fdevolucion:Date;
+    fprestamo:string;
+    fdevolucion:string;
 }
